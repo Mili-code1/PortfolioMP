@@ -28,7 +28,7 @@ body{
 .texto-principal{
     font-size: 60px;
     font-family: "Soft";
-    margin-top: 130px;
+    margin-top: 50px;
     background: linear-gradient(to right, #E41979 0%, #926BB6 50%, #40BDF3 90%);
     background-clip: text;
     -webkit-background-clip: text;
