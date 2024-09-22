@@ -10,6 +10,7 @@
         <title>Mirian Chalañuk | Desarrollo Web Front-End</title>
         <link rel="shortcut icon" href="/assets/img/icono.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="/styles/default.css">
     </head>
 
@@ -157,29 +158,29 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-md-3 mb-sm-3">
                     <div class="card text-center mx-auto" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="/assets/img/blog-totoro.png" class="card-img-top" alt="blog de personaje japonés">
                         <div class="card-body p-2">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-light">Go somewhere</a>
+                          <h5 class="card-title">Blog: Mi Vecino Totoro</h5>
+                          <p class="card-text">Se trata de una primera página web que cree con solamente estructura en HTML.</p>
+                          <a href="https://graceful-otter-207744.netlify.app/" class="btn btn-light" target="_blank">Ir a la página</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-md-3 mb-sm-3">
                     <div class="card text-center mx-auto" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="/assets/img/tarot-y-gatitos.png" class="card-img-top" alt="página de tarot">
                         <div class="card-body p-2">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-light">Go somewhere</a>
+                          <h5 class="card-title">Tarot y Gatitos</h5>
+                          <p class="card-text">Se trata de un juego intractivo donde apliqué los nuevos conocimientos adquiridos en CSS.</p>
+                          <a href="https://fluffy-boba-5f85a6.netlify.app/" class="btn btn-light" target="_blank">Ir a la página</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-md-3 mb-sm-3">
                     <div class="card text-center mx-auto" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="/assets/img/mi-portfolio.png" class="card-img-top" alt="Portfolio de Mirian Chalañuk">
                         <div class="card-body p-2">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -196,28 +197,45 @@
         </div>
 
 
-        <!--FOOTER-CONTACTO-->
+        <!--FOOTER-CONTACTO/PIE DE PÁGINA-->
         <footer>
             <div class="container" id="contacto">
                 <div class="text-center mb-5">
                     <h2 class="texto-principal">Contáctame</h2>
                 </div>
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar</button>
+                <form action="https://formspree.io/f/mjkbqeon" method="post">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Texto</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="boton-cv">Enviar</button>
+                </form>
+            </div> 
+            
+            <div class="container-fluid bg-black mt-5">
+                <div class="row">
 
+                    <div class="col-6 text-center pt-2">
+                        <p class="pie-de-pagina">Chalañuk Mirian 2024. Derechos reservados.</p>
+                    </div>
+
+                    <div class="col-6 text-center">
+                        <a href="https://www.linkedin.com/in/mirian-chala%C3%B1uk-ab6494296" class="text-light me-3" target="_blank"><i class="bi bi-linkedin icono-gradiente mx-5"></i></a>
+                        <a href="https://github.com/Mili-code1" class="text-light me-3" target="_blank"><i class="bi bi-github icono-gradiente"></i></a>
+                    </div>
+   
+                </div>
 
             </div>
+     
         </footer>
 
 

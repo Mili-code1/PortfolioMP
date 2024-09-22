@@ -61,7 +61,8 @@ body{
 .mi-imagen{
     width: 50%;
     height: auto;
-    border-radius: 40% ;
+    border-radius: 40%;
+    box-shadow: 0px 0px 20px #E41979, 0px 0px 20px #926BB6, 0px 0px 20px #40BDF3;
 }
 
 .card{
@@ -81,17 +82,16 @@ body{
     color: white;
 }
 
-.btn{
-    font-family: "Soft";
-    padding: 10px 20px;
-    border-radius: 15px;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    color: white;
+.icono-gradiente{
     background: linear-gradient(to right, #E41979, #926BB6, #40BDF3);
+    display: inline-block;
+    font-size: 30px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.btn:hover{
-    filter: drop-shadow(0px 0px 20px white);
+.pie-de-pagina{
+    font-family: "Cake";
+    color: white;
 }
